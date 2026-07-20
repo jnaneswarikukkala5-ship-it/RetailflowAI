@@ -1,0 +1,95 @@
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 21 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\flask_sqlalchemy\query.py:30: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  rv = self.get(ident)
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\backend\routes\inventory_routes.py:33: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  if not Product.query.get(payload["product_id"]):
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\backend\routes\sales_routes.py:38: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  product = Product.query.get(payload["product_id"])
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\backend\services\ai_service.py:42: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  product = Product.query.get(product_id)
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\backend\services\ai_service.py:42: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  product = Product.query.get(product_id)
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\backend\services\ai_service.py:42: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  product = Product.query.get(product_id)
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\backend\services\ai_service.py:42: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  product = Product.query.get(product_id)
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\backend\services\ai_service.py:42: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  product = Product.query.get(product_id)
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\backend\services\ai_service.py:42: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  product = Product.query.get(product_id)
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\backend\services\ai_service.py:42: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  product = Product.query.get(product_id)
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\sklearn\base.py:450: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+C:\Users\JNANESWARI KUKKALA\Documents\HACKATHON\.venv\lib\site-packages\flask_sqlalchemy\query.py:30: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  rv = self.get(ident)
+.
+----------------------------------------------------------------------
+Ran 1 test in 3.434s
+
+OK
+
+--- Executing Test Step 1: Health Check ---
+Health check response: {'service': 'RetailFlow AI API', 'status': 'ok'}
+
+--- Executing Test Step 2: User Registration ---
+Register response: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4NDU2OTkxNSwianRpIjoiN2ZlMTVlYjktZjMxMi00N2I3LTljOTQtNjFmN2MwODE4YTIxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3ODQ1Njk5MTUsImNzcmYiOiI5MzE5NTUyNS1hZjIxLTQ4ZjgtOGFmZC1jMWY1MjRjNWVjNjYiLCJleHAiOjE3ODQ1OTg3MTUsInJvbGUiOiJzdGFmZiIsImVtYWlsIjoiamFuZUByZXRhaWxmbG93LmFpIn0.WG2waoIts-IDSftGPlMBowXKKMftAJ2vahwA7G5AecM', 'message': 'Registration successful', 'user': {'created_at': '2026-07-20T17:51:55.595074', 'email': 'jane@retailflow.ai', 'id': 2, 'name': 'Jane Staff', 'role': 'staff'}}
+
+--- Executing Test Step 3: User Login ---
+Login response: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4NDU2OTkxNSwianRpIjoiYzMyYjRiZWUtMmIzMC00NGJhLTlkMjAtY2Y0YmExN2E1ZmNhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3ODQ1Njk5MTUsImNzcmYiOiJmM2RhMmEwMS1kNDM2LTRjZjAtYmY3OS0xZTA2ZTdjNGVhOWUiLCJleHAiOjE3ODQ1OTg3MTUsInJvbGUiOiJzdGFmZiIsImVtYWlsIjoiamFuZUByZXRhaWxmbG93LmFpIn0.TCKfEUdcAvK_bpZ8fihAUO2A31PID3dTc8SK-oKSHWE', 'message': 'Login successful', 'user': {'created_at': '2026-07-20T17:51:55.595074', 'email': 'jane@retailflow.ai', 'id': 2, 'name': 'Jane Staff', 'role': 'staff'}}
+
+--- Executing Test Step 4: Product CRUD Operations ---
+Initially seeded products count: 5
+Create product response: {'item': {'barcode': 'RF-TEST-MOUSE', 'category': 'Electronics', 'created_at': '2026-07-20T17:51:55.828011', 'description': 'Ergonomic 2.4Ghz wireless mouse', 'id': 6, 'price': 25.5, 'product_name': 'Test Wireless Mouse', 'supplier': 'LogiTech Solutions'}, 'message': 'Product created'}
+
+--- Executing Test Step 5: Inventory Creation & Update ---
+Initial inventory list summary: {'healthy_items': 3, 'low_stock_items': 2, 'out_of_stock_items': 0, 'total_inventory_records': 5}
+Create inventory response: {'id': 6, 'product_id': 6, 'product_name': 'Test Wireless Mouse', 'quantity': 10, 'reorder_level': 5, 'status': 'In Stock', 'updated_at': '2026-07-20T17:51:55.925277', 'warehouse_location': 'East Hub'}
+Update inventory response (trigger Low Stock): {'id': 6, 'product_id': 6, 'product_name': 'Test Wireless Mouse', 'quantity': 4, 'reorder_level': 5, 'status': 'Low Stock', 'updated_at': '2026-07-20T17:51:55.943092', 'warehouse_location': 'East Hub'}
+
+--- Executing Test Step 6: Sales Operations (Deduct Stock & Low Stock triggers) ---
+Initially seeded sales count: 3
+Post sale response: {'inventory': {'id': 6, 'product_id': 6, 'product_name': 'Test Wireless Mouse', 'quantity': 4, 'reorder_level': 5, 'status': 'Low Stock', 'updated_at': '2026-07-20T17:51:55.983926', 'warehouse_location': 'East Hub'}, 'item': {'customer_name': 'Test Customer', 'id': 4, 'payment_method': 'Card', 'product_id': 6, 'product_name': 'Test Wireless Mouse', 'quantity': 8, 'sale_date': '2026-07-20T17:51:55.978026', 'total_amount': 239.92}, 'message': 'Sale recorded'}
+Sales report: {'daily_sales': 4, 'monthly_sales': 4, 'total_orders': 4, 'total_revenue': 2642.84, 'weekly_sales': 4}
+
+--- Executing Test Step 7: Analytics API Dashboard Calculations ---
+Dashboard Analytics: {'average_order_value': 660.71, 'estimated_profit': 792.85, 'low_stock_alerts': 3, 'revenue': 2642.84, 'total_inventory_records': 6, 'total_products': 6, 'total_sales': 4}
+Revenue Summary: {'estimated_profit': 792.85, 'profit_margin': 30.0, 'revenue': 2642.84}
+Top Products: [{'product_id': 5, 'product_name': 'Desk Lamp', 'revenue': 468.0, 'units_sold': 12}, {'product_id': 3, 'product_name': 'Smart Speaker', 'revenue': 895.0, 'units_sold': 10}, {'product_id': 1, 'product_name': 'Premium Headphones', 'revenue': 1039.92, 'units_sold': 8}, {'product_id': 6, 'product_name': 'Test Wireless Mouse', 'revenue': 239.92, 'units_sold': 8}, {'product_id': 2, 'product_name': 'Office Chair', 'revenue': 0.0, 'units_sold': 0}]
+Monthly Sales: [{'month': '2026-07', 'revenue': 2642.84, 'sales': 38}]
+
+--- Executing Test Step 8: AI Analytics (ML predicting demand & restock levels) ---
+Demand prediction response: {'message': 'Demand prediction created', 'prediction': {'confidence_score': 0.96, 'current_stock': 4, 'predicted_demand': 56, 'product_id': 6, 'product_name': 'Test Wireless Mouse', 'recommendation': 'Restock 57 units', 'reorder_level': 5, 'restock_quantity': 57}}
+AI Recommendations Keys found: dict_keys(['forecast', 'predictions', 'restock'])
+AI Restock Items count: 3
+
+--- Executing Test Step 9: Cleanup & Deletion Verification ---
+
+API Testing Completed successfully!

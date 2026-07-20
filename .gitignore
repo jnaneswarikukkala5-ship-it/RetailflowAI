@@ -1,0 +1,8 @@
+node_modules/
+.env
+dist/
+__pycache__/
+*.py[cod]
+backend/.env
+backend/*.db
+backend/ml/inventory_model.pkl

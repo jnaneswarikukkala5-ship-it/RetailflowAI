@@ -1,22 +1,65 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FiActivity, FiAlertTriangle, FiBox, FiDollarSign, FiShoppingCart, FiUsers } from "react-icons/fi";
 
 import DashboardCards from "../components/DashboardCards";
 import InventoryChart from "../components/InventoryChart";
 import SalesChart from "../components/SalesChart";
-import { dashboardStats, recentActivities, recentOrders } from "../data/mockData";
-
-const statsWithIcons = [
-  { ...dashboardStats[0], icon: FiBox },
-  { ...dashboardStats[1], icon: FiDollarSign },
-  { ...dashboardStats[2], icon: FiShoppingCart },
-  { ...dashboardStats[3], icon: FiAlertTriangle },
-];
+import { api } from "../services/api";
 
 function Dashboard() {
+  const [stats, setStats] = useState([]);
+  const [orders, setOrders] = useState([]);
+  const [activities, setActivities] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const [dashRes, salesRes] = await Promise.all([
+          api.analytics.dashboard(),
+          api.sales.list(),
+        ]);
+        
+        const d = dashRes.dashboard;
+        const mappedStats = [
+          { label: "Total Products", value: d.total_products, change: "Active items", tone: "blue", icon: FiBox },
+          { label: "Revenue", value: `$${Number(d.revenue).toFixed(2)}`, change: `Est. Profit: $${Number(d.estimated_profit).toFixed(2)}`, tone: "navy", icon: FiDollarSign },
+          { label: "Sales", value: d.total_sales, change: `Avg Order: $${Number(d.average_order_value).toFixed(2)}`, tone: "sky", icon: FiShoppingCart },
+          { label: "Low Stock Alerts", value: d.low_stock_alerts, change: "Needs restocking", tone: "amber", icon: FiAlertTriangle },
+        ];
+        setStats(mappedStats);
+
+        const mappedOrders = (salesRes.items || []).slice(0, 5).map(item => ({
+          id: `RF-${1000 + item.id}`,
+          customer: item.customer_name || "Walk-In Customer",
+          item: item.product_name,
+          amount: `$${Number(item.total_amount).toFixed(2)}`,
+          status: "Paid"
+        }));
+        setOrders(mappedOrders);
+
+        const mappedActivities = (salesRes.items || []).slice(0, 4).map(item => ({
+          text: `Recorded sale of ${item.quantity}x ${item.product_name} via ${item.payment_method}.`,
+          time: new Date(item.sale_date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        }));
+        setActivities(mappedActivities);
+
+      } catch (err) {
+        setError(err.message || "Failed to load dashboard data");
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadData();
+  }, []);
+
+  if (loading) return <div className="card-glass" style={{ padding: "2rem", textAlign: "center" }}>Loading Dashboard Data...</div>;
+  if (error) return <div className="card-glass" style={{ padding: "2rem", textAlign: "center", color: "#ef4444" }}>Error: {error}</div>;
+
   return (
     <div className="dashboard-grid">
-      <DashboardCards items={statsWithIcons} />
+      <DashboardCards items={stats} />
 
       <div className="dashboard-grid__charts">
         <SalesChart labels={["Jan", "Feb", "Mar", "Apr", "May", "Jun"]} values={[42, 55, 63, 71, 79, 91]} title="Sales Line Chart" />
@@ -42,7 +85,7 @@ function Dashboard() {
               </tr>
             </thead>
             <tbody>
-              {recentOrders.map((order) => (
+              {orders.map((order) => (
                 <tr key={order.id}>
                   <td>{order.id}</td>
                   <td>{order.customer}</td>
@@ -78,8 +121,8 @@ function Dashboard() {
             </div>
           </div>
           <ul className="activity-list">
-            {recentActivities.map((activity) => (
-              <li key={activity.time}>
+            {activities.map((activity, index) => (
+              <li key={index}>
                 <strong>{activity.text}</strong>
                 <span>{activity.time}</span>
               </li>
