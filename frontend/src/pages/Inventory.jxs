@@ -1,0 +1,24 @@
+function Inventory() {
+  return (
+    <div style={{ padding: "40px" }}>
+      <h1>Inventory</h1>
+
+      <h3>Current Stock</h3>
+
+      <ul>
+        <li>Laptops - 25 Units</li>
+        <li>Smartphones - 40 Units</li>
+        <li>Headphones - 75 Units</li>
+      </ul>
+
+      <h3 style={{ color: "red" }}>Low Stock Alerts</h3>
+
+      <ul>
+        <li>Mouse - 5 Units</li>
+        <li>Keyboard - 8 Units</li>
+      </ul>
+    </div>
+  );
+}
+
+export default Inventory;
